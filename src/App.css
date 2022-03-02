@@ -1,0 +1,231 @@
+body {
+  box-sizing: border-box;
+  color: black;
+  text-transform: uppercase;
+  /* background-image: url(https://images.pexels.com/photos/2828283/pexels-photo-2828283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
+  background-image: radial-gradient(#EA52F8, #0066FF);
+  background-size: cover;
+
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  color: black;
+
+}
+
+.home h1 {
+  color: rgb(130, 199, 1);
+  text-align: center;
+  font-weight: bolder;
+  font-size: 70px;
+
+}
+
+.home h2 {
+  color: rgb(39, 29, 29);
+  font-size: 50px;
+  text-align: center;
+}
+
+#hindu-thali {
+  margin-bottom: ;
+}
+
+/* Order Now Btn */
+
+button {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica, "sans-serif";
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-image: radial-gradient(#e86ed0, #b1e8ed);
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-left: 45%;
+}
+
+button:hover {
+  background-image: radial-gradient(#6BE1BA, #6E54EF);
+}
+
+button>svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+
+
+.img_tag {
+  border: 2px solid rgb(146, 141, 141);
+  border-radius: 5px;
+}
+
+.container {
+  background-image: radial-gradient(#F7A9D6 , #858EF8);
+  background-clip: content-box;
+  box-shadow:
+  3.4px 3.4px 2.7px rgba(0, 0, 0, 0.04),
+  8.7px 8.7px 6.9px rgba(0, 0, 0, 0.058),
+  17.7px 17.7px 14.2px rgba(0, 0, 0, 0.072),
+  36.5px 36.5px 29.2px rgba(0, 0, 0, 0.09),
+  100px 100px 80px rgba(0, 0, 0, 0.13)
+;
+
+}
+
+
+/* nav bar edit */
+
+#navbarSupportedContent {
+  margin-left: 170px;
+  margin-bottom: 60px;
+}
+
+
+
+/* Headline Animation */
+
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #080708 29%,
+      #ff1361 67%,
+      #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 40px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Card Edit */
+
+.card {
+  background-color: #080708;
+  padding: 5px;
+}
+
+
+/* Crad Btn */
+
+/* From css.buttons.io by @meermubashar */
+.buttons {
+  width: 140px;
+  height: 45px;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.buttons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.buttons:hover::before {
+  width: 100%;
+}
+
+.buttons:hover {
+  color: black;
+}
+
+.buttons:active:before {
+  background: #b9b9b9;
+}
+
+
+/* Menu List */
+
+
+.menulist {
+  font-size: 2.1rem;
+}
+
+.menulist:hover {
+  font-size: 2.5rem;
+  transition: all 0.6s;
+}
+
+/* Summary Headline */
+
+.summary-headline{
+  font-size: 2.1rem;
+  background-color: black;
+  color:white
+}
+.summary-headline:hover{
+  font-size: 2.5rem;
+  transition: all 0.6s; 
+  background-color: balck;
+  color:white
+}
+
+/* cart main container move */
+
+#cart-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* media query part is begin */
+
+
+@media screen and (max-width: 720px) {
+  #toggle{
+      margin-right: 100px;
+      position: absolute;
+      left:40%;
+  }
+  .nav-item{
+    position: relative;
+    left:-24%;
+  }
+}
